@@ -1,0 +1,15 @@
+iframe:first-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  height: 100%;
+}
+
+iframe:last-of-type {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 75%;
+  height: 100%;
+}

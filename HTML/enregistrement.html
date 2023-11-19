@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../JS/controle.js"></script>
+    <title>Enregistrement</title>
+  </head>
+  <body>
+    <form name="form" action="../PHP/enregistrement.php" method="post">
+      <fieldset>
+        <legend>Enregistrement d'un testeur:</legend>
+        <p>
+          <label for="permis">N Permis:</label>
+          <input type="text" name="permis" id="permis" />
+        </p>
+        <p>
+          <label for="nom">Nom:</label>
+          <input type="text" name="nom" id="nom" />
+        </p>
+        <p>
+          <label for="prenom">Prenom:</label>
+          <input type="text" name="prenom" id="prenom" />
+        </p>
+        <p>
+          <label for="">Genre:</label>
+          <input type="radio" name="genre" id="feminin" value="F" /> Feminin
+          <input type="radio" name="genre" id="masculin" value="M" /> Masculin
+        </p>
+        <div>
+          <button type="reset">Annuler</button>
+          <button type="submit" onclick="return verif1()">Ajouter</button>
+        </div>
+      </fieldset>
+    </form>
+  </body>
+</html>
